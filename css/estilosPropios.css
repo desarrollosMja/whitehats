@@ -432,6 +432,10 @@ p, span {
   width: 50px;
   height: auto; }
 
+.logoServicios {
+  width: 50px;
+  height: auto; }
+
 /*ABOUT*/
 #about {
   display: flex;

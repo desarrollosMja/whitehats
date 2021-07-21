@@ -1,8 +1,8 @@
-//Dejar fijo el logo negro en pantalla menor a 992px
+//Dejar fijo el logo negro en pantalla menor a 992px INDEX
 if (window.innerWidth <= 991){
   $('.logo').attr('src', './assets/img/favicon-negro.png');
 } else{
-      // Función para cambiar imagen del logo al hacer el scroll
+      // Función para cambiar imagen del logo al hacer el scroll INDEX
       $(function() {
         $(document).scroll(function() {
           if ($(this).scrollTop() > 1) {
@@ -10,6 +10,23 @@ if (window.innerWidth <= 991){
           }
           if ($(this).scrollTop() < 1) {
             $('.logo').attr('src', './assets/img/logo-whitehats-blanco-200-200.png');
+          }
+        });
+      });
+}
+
+//Dejar fijo el logo negro en pantalla menor a 992px SERVICIOS
+if (window.innerWidth <= 991){
+  $('.logoServicios').attr('src', '../assets/img/favicon-negro.png');
+} else{
+      // Función para cambiar imagen del logo al hacer el scroll SERVICIOS
+      $(function() {
+        $(document).scroll(function() {
+          if ($(this).scrollTop() > 1) {
+            $('.logoServicios').attr('src', '../assets/img/favicon-negro.png')
+          }
+          if ($(this).scrollTop() < 1) {
+            $('.logoServicios').attr('src', '../assets/img/logo-whitehats-blanco-200-200.png');
           }
         });
       });

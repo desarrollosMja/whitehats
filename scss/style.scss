@@ -59,6 +59,11 @@ $coloresRedes:(
     height: auto;
 }
 
+.logoServicios{
+    width: 50px;
+    height: auto;
+}
+
 /*ABOUT*/
 #about{
     @include flexi(column, nowrap, center, center, center);
