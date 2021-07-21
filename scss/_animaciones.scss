@@ -1,0 +1,39 @@
+/*Efecto aparecer--------------------------*/
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@for $i from 1 to 9{
+    .mostrar#{$i}s {
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+        animation-duration: 1s*$i;
+    }
+}
+
+/*Efecto ZOOM-OUT--------------------------------*/
+@keyframes zoomOut{
+    from{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@for $i from 1 to 5{
+    .acercar#{$i}s {
+        animation-name: zoomOut;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+        animation-duration: 1s*$i;    
+    }
+}
