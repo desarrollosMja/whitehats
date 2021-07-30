@@ -228,7 +228,7 @@
           background-color: black;
           color: white;
           transition: 0.3s; }
-    @media (max-width: 576px) {
+    @media (max-width: 550px) {
       #seccionPlanes #planes {
         display: flex;
         flex-direction: column;
@@ -243,8 +243,26 @@
           justify-content: space-evenly;
           justify-items: center;
           align-items: center;
-          width: 50%; } }
-    @media (min-width: 577px) and (max-width: 1200px) {
+          width: 80%; }
+        #seccionPlanes #planes li {
+          font-size: 14px; } }
+    @media (min-width: 551px) and (max-width: 700px) {
+      #seccionPlanes #planes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center; }
+        #seccionPlanes #planes .planes {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: space-evenly;
+          justify-items: center;
+          align-items: center;
+          width: 60%; } }
+    @media (min-width: 701px) and (max-width: 1200px) {
       #seccionPlanes #planes {
         display: flex;
         flex-direction: row;
@@ -259,7 +277,7 @@
           justify-content: space-evenly;
           justify-items: center;
           align-items: center;
-          width: 38%; } }
+          width: 45%; } }
 
 /*Footer Servicios*/
 #iconosRedesSociales {
@@ -338,6 +356,10 @@
 .botonPrev {
   margin-left: 10px; }
 
+#textoFotografia {
+  width: 80%;
+  margin-top: 20px; }
+
 /*BRINDAMOS SOLUCIONES*/
 .mastheadSol {
   background: linear-gradient(to bottom, rgba(66, 78, 92, 0.8) 0%, rgba(66, 75, 92, 0.8) 100%), url("../assets/img/portfolio/fullsize/brindamosSoluciones.jpg") !important;
@@ -345,6 +367,12 @@
   background-repeat: no-repeat !important;
   background-attachment: scroll !important;
   background-size: cover !important; }
+
+#textoSoluciones {
+  width: 80%;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 22px; }
 
 #solucionesIntegrales svg {
   width: 40px;
@@ -464,13 +492,13 @@ p, span {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      justify-content: center;
+      justify-content: flex-start;
       justify-items: center;
       align-items: center;
       border: solid 1px white;
       background-color: white;
       width: 30%;
-      height: 300px;
+      height: 350px;
       margin: 10px; }
       #about #integrantes div * {
         margin: 10px; }
