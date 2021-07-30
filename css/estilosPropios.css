@@ -208,7 +208,8 @@
         color: white;
         list-style: none; }
       #seccionPlanes #planes .planes i {
-        margin-left: 50px; }
+        margin-left: 50px;
+        float: right; }
       #seccionPlanes #planes .planes .ok {
         color: greenyellow; }
       #seccionPlanes #planes .planes .not {
