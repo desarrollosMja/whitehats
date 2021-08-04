@@ -422,6 +422,94 @@
       width: 25%;
       height: auto; }
 
+/*Efecto aparecer--------------------------*/
+@keyframes aparecer {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.mostrar1s {
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 1s; }
+
+.mostrar2s {
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 2s; }
+
+.mostrar3s {
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 3s; }
+
+.mostrar4s {
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 4s; }
+
+.mostrar5s {
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 5s; }
+
+.mostrar6s {
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 6s; }
+
+.mostrar7s {
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 7s; }
+
+.mostrar8s {
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 8s; }
+
+/*Efecto ZOOM-OUT--------------------------------*/
+@keyframes zoomOut {
+  from {
+    transform: scale(0.1);
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+
+.acercar1s {
+  animation-name: zoomOut;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 1s; }
+
+.acercar2s {
+  animation-name: zoomOut;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 2s; }
+
+.acercar3s {
+  animation-name: zoomOut;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 3s; }
+
+.acercar4s {
+  animation-name: zoomOut;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 4s; }
+
 a {
   text-decoration: none;
   color: blue; }
