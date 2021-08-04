@@ -422,6 +422,225 @@
       width: 25%;
       height: auto; }
 
+a {
+  text-decoration: none;
+  color: blue; }
+
+.desaparecer {
+  display: none !important; }
+
+.posteo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 90%;
+  height: 45vh;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-end-end-radius: 3%;
+  border-start-start-radius: 3%; }
+  @media (max-width: 804px) {
+    .posteo {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      height: 90vh; } }
+  @media (min-width: 805px) and (max-width: 1000px) {
+    .posteo {
+      height: 55vh; } }
+
+.etiqueta {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+  font-size: 12px; }
+
+#hrefHome {
+  margin-top: 20px;
+  margin-left: 10px; }
+  #hrefHome img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right; }
+
+#h1Blog {
+  margin-top: 50px;
+  border-top: solid 2px gray;
+  border-bottom: solid 2px gray;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 3rem !important; }
+  @media (max-width: 600px) {
+    #h1Blog {
+      width: 60%;
+      font-size: 2rem !important; } }
+  @media (min-width: 601px) and (max-width: 704px) {
+    #h1Blog {
+      width: 55%;
+      font-size: 2rem !important; } }
+
+#grilla {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "articulos aside" "articulos aside" "articulos aside"; }
+  #grilla #articulos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    grid-area: articulos; }
+    #grilla #articulos div img {
+      width: 20%;
+      height: auto;
+      display: inline-block !important;
+      margin: 20px; }
+      @media (max-width: 804px) {
+        #grilla #articulos div img {
+          width: 40%;
+          height: auto; } }
+    #grilla #articulos div #h2Blog {
+      display: inline-block !important;
+      margin: 10px; }
+    #grilla #articulos div #pBlog {
+      display: inline-block !important;
+      margin: 10px; }
+    #grilla #articulos div #fecha {
+      margin-left: 10px; }
+    #grilla #articulos div ul {
+      display: inline-block !important;
+      padding: 0;
+      margin-bottom: 10px; }
+  #grilla aside {
+    grid-area: aside;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px; }
+    #grilla aside #h3Aside {
+      margin: 10px;
+      text-align: center; }
+    #grilla aside hr {
+      width: 25%;
+      margin-right: auto;
+      margin-left: auto; }
+    #grilla aside #contenedorEtiquetas {
+      margin-left: 10px;
+      margin-right: 10px; }
+      #grilla aside #contenedorEtiquetas #botonQuitarFiltro {
+        margin-bottom: 20px; }
+    #grilla aside #contenedorFechas {
+      margin-top: 20px; }
+      #grilla aside #contenedorFechas li {
+        list-style: circle; }
+
+article {
+  margin: 80px; }
+  article li {
+    font-weight: 300 !important; }
+  article strong {
+    font-weight: 600; }
+  article img {
+    width: 300px;
+    height: auto; }
+
+#fotoProducto img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#psicologiaDelColor {
+  display: inline-block; }
+  #psicologiaDelColor .divColores {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    #psicologiaDelColor .divColores div {
+      width: 50%; }
+      @media (max-width: 1100px) {
+        #psicologiaDelColor .divColores div {
+          width: 100%; } }
+    @media (max-width: 1100px) {
+      #psicologiaDelColor .divColores {
+        display: flex;
+        flex-direction: column; } }
+  #psicologiaDelColor img {
+    width: 300px !important;
+    height: auto !important;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (max-width: 1100px) {
+      #psicologiaDelColor img {
+        width: 400px !important;
+        height: auto !important; } }
+
+#feedInstagram .divFeedIG {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #feedInstagram .divFeedIG img {
+    margin: 10px; }
+
+#sitioWeb li {
+  font-weight: bold !important; }
+
+#seo img {
+  width: 600px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 800px) {
+    #seo img {
+      width: 400px;
+      height: auto; } }
+
+rojo {
+  color: red; }
+
+naranja {
+  color: orange; }
+
+amarillo {
+  color: yellow; }
+
+azul {
+  color: blue; }
+
+verde {
+  color: green; }
+
+violeta {
+  color: violet; }
+
+marron {
+  color: brown; }
+
+rosa {
+  color: pink; }
+
+blanco {
+  color: white;
+  background-color: black; }
+
+.enLinea {
+  display: inline-block; }
+
+.centradoStrong {
+  text-align: center;
+  font-weight: bold !important;
+  font-size: 20px !important; }
+
 /*FUENTES*/
 h1 {
   font-family: 'Zilla Slab', serif !important;

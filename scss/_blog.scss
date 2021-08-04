@@ -1,0 +1,165 @@
+@import "display";
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+.desaparecer{
+    display: none !important;
+}
+
+.posteo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    width: 90%;
+    height: 45vh;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.1);
+    border-end-end-radius: 3%;
+    border-start-start-radius: 3%;
+
+    @media (max-width: 804px){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        height: 90vh;
+    }
+
+    @media (min-width: 805px) and (max-width: 1000px){
+        height: 55vh;
+    }
+}
+
+.etiqueta{
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+    font-size: 12px;
+}
+
+#hrefHome{
+    margin-top: 20px;
+    margin-left: 10px;
+
+    img{
+        width: 50px;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        float: right;
+    }
+}
+
+#h1Blog{
+    margin-top: 50px;
+    border-top: solid 2px gray;
+    border-bottom: solid 2px gray;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 3rem !important;
+
+    @media (max-width: 600px){
+        width: 60%;
+        font-size: 2rem !important;
+    }
+
+    @media (min-width: 601px) and (max-width: 704px){
+        width: 55%;
+        font-size: 2rem !important;
+    }
+}
+
+#grilla{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "articulos aside"
+    "articulos aside"
+    "articulos aside"
+    ;
+
+    #articulos{
+        @include flexi(column, nowrap, flex-start, center, center);
+        grid-area: articulos;
+
+        div{
+
+            img{
+                width: 20%;
+                height: auto;
+                display: inline-block !important;
+                margin: 20px;
+
+                @media (max-width: 804px) {
+                    width: 40%;
+                    height: auto;
+                }
+            }
+
+            #h2Blog{
+                display: inline-block !important;
+                margin: 10px;
+            }
+
+            #pBlog{
+                display: inline-block !important;
+                margin: 10px;
+            }
+
+            #fecha{
+                margin-left: 10px;
+            }
+
+            ul{
+                display: inline-block !important;
+                padding: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    aside{
+        grid-area: aside;
+        background-color: rgba(0,0,0,0.2);
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 10px;
+
+        #h3Aside{
+            margin: 10px;
+            text-align: center;
+        }
+
+        hr{
+            width: 25%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #contenedorEtiquetas{
+            margin-left: 10px;
+            margin-right: 10px;
+
+            #botonQuitarFiltro{
+                margin-bottom: 20px;
+            }
+        }
+
+        #contenedorFechas{
+            margin-top: 20px;
+
+            li{
+                list-style: circle;
+            }
+        }
+    }
+}
+
